@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height:100vh ;
+    overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-whole{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: brown;
+    height: 50px;
+   
+}
+.brand{
+    font-size: 22px;
+}
+.menubar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.menubar ul li{
+    list-style: none;
+    padding: 10px;
+    align-items: center;
+    
+}
+.menubar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+}
+.menubar ul li:hover{
+    background-color: aqua;
+}
+.burger{
+    cursor: pointer;
+    display: none;
+}
+.burger div{
+    height: 5px;
+    width: 25px;
+    margin: 5px;
+    background-color: aqua;
+    transition: 0.5s ease-in;
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+        opacity: inherit;
+    }
+    .menubar ul{
+        position: absolute;
+        right: 0px;
+        height: 80vh;
+        top: 8.0vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 40vh;
+        background-color:palevioletred;
+        opacity: .8;
+        transform: translateX(00%);
+        z-index: 1;
+    }
+    .menubar ul li{
+        font-weight: bold;
+    }
+    .burger{
+        display: block;
+    }
+    .menubar ul li{
+        opacity: .9;
+    }
+    .menubar.show{
+
+        transform: translateX(100%);
+        
+        transition: transform 0.5s ease-in-out;
+    }
+}
+#input{
+    
+    padding: 4px;
+}
+#btn{
+    padding: 4px;
+}
+.slider-component{
+    
+    height: 100vh;
+    width: 100vw;
+    
+}
+.image-slider{
+    position: relative;
+    
+}
+.image{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    
+}
+.img1{
+    background-image: url('./images/add1.jpg');
+}
+.img2{
+    background-image: url('./images/add2.jpg')
+}
+.img3{
+    background-image: url('./images/add3.jpg')
+}
+.img4{
+    background-image: url('./images/add4.jpg')
+}
+.img5{
+    background-image: url('./images/add5.jpg')
+}
+.span{
+    position: absolute;
+    font-size: 45px;
+    color: palevioletred;
+}
+.span2{
+    position: relative;
+    left: 50%;
+    top: 25%;
+    font-size: 20px;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    background-color: aqua;
+}
+#arrowright{
+    right:  0px;
+    margin-left: 10px;
+    background-color:transparent;
+}
+#arrowleft{
+    left:  20px;
+    margin-left: 10px;
+    background-color:transparent;
+}
+#span1{
+    color: red;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+#contact{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 20%;
+    
+}
+.btn{
+    padding: 0px;
+    margin: 0px;
+    
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.section{
+   float: left; 
+   height: 500px;
+   width: 650px;
+   position: relative;
+   top: 30px;
+}
+#offer{
+   position: relative;
+   font-size: 30px;
+   text-align: center;
+   top: 20px;
+}
+#rightsection{
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-right: 20px;
+}
+.skillset{
+    margin: 0px;
+    
+}
+.skillset h2{
+    text-align: center;
+    padding: 10px;
+}
+#leftsection h2{
+    text-align: center;
+}
+.progressbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    align-items: center;
+}
+.progressbar meter{
+    width: 60%;
+    
+}
+#rightsection p{
+    padding: 5px 10px;
+    font-size: 18px;
+    
+}
+
+.extraskill{
+    position: absolute;
+    top: 1250px;
+    height: 400px;
+    width: 100vw;
+    
+}
+.extraskill h2{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+.extraskill ul {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   background-color: #74b9ff;
+}
+.extraskill ul li{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    
+}
+.newsportal{
+ position: relative;
+ top: 200px;
+}
+.news1{
+    position: relative;
+    
+}
+.news3{
+    position: relative;
+    
+}
+.videos{
+    position: relative;
+    display: block;
+    
+    top: 220px;
+    
+    
+}
+.videos h2{
+    text-align: center;
+    top: 10px;
+}
+.videos h3{
+    padding: 10px;
+}
+.v1,.v2{
+    float: left;
+    margin: 25px 25px 25px 35px;
+}
+.v2{
+    position: relative;
+    padding: 20px;
+    top: 22px;
+}
+.v3{
+    position: relative;
+    float: left;
+    left: 50px;
+    
+}
+.v4{
+    position: relative;
+    top: -320px;
+    left: 50px;
+    
+
+}
+
+.team{
+    position: relative;
+    height: 766px;
+    width: 100%;
+    margin-top: -80px;
+    background-image: url('./images/add7.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.span1{
+    position: absolute;
+    left: 29%;
+    top: 55%;
+    font-size: 30px;
+}
+.contactme{
+    height: 500px;
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+    background-color:#dfe6e9;
+    opacity: 0.9;
+    padding: 20px;
+
+}
+.contactme h2{
+    text-align: center;
+    font-size: 30px;
+}
+.contactme p{
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.inner span,.inner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.github{
+    float: left;
+    height: 500px;
+    width: 50%;
+    margin-top: 0px;
+    background-color:#dfe6e9;
+    opacity: 0.9;
+    padding: 20px;
+    
+}
+.github h2{
+    text-align: center;
+    font-size: 30px;
+}
+.socialmedia{
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
